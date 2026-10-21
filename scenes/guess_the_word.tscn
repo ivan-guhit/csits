@@ -1,0 +1,713 @@
+[gd_scene format=3 uid="uid://cejhjy61l5mg2"]
+
+[ext_resource type="Script" uid="uid://j15uimn7073j" path="res://scripts/control.gd" id="1_134en"]
+[ext_resource type="FontFile" uid="uid://bia2cieq2beeu" path="res://assets/font/Minecraft.ttf" id="2_lt5d2"]
+[ext_resource type="Texture2D" uid="uid://c8sw7nlou06i4" path="res://assets/bg/background_1.png" id="3_l3v4f"]
+[ext_resource type="Texture2D" uid="uid://bh3m3jioxu5ug" path="res://assets/bg/background_2.png" id="4_tc8kw"]
+[ext_resource type="Texture2D" uid="uid://1nxk1pye52ha" path="res://assets/bg/background_3.png" id="5_m0vha"]
+[ext_resource type="Texture2D" uid="uid://ba3q3bkuddfy5" path="res://assets/bg/background_4.png" id="6_y25yv"]
+
+[sub_resource type="Animation" id="Animation_134en"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("AnimationPlayer/ColorRect:self_modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(0, 0, 0, 0)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("CanvasLayer/Control/Timer:self_modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("CanvasLayer/Control/Guess:self_modulate")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("CanvasLayer/Control/Blank:self_modulate")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("CanvasLayer/Control/LineEdit:self_modulate")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("AnimationPlayer/Label:self_modulate")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 0)]
+}
+tracks/6/type = "value"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath("AnimationPlayer/Label:text")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": ["You Lose"]
+}
+tracks/7/type = "value"
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/path = NodePath("BG/BG4/Sprite2D:self_modulate")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+tracks/8/type = "value"
+tracks/8/imported = false
+tracks/8/enabled = true
+tracks/8/path = NodePath("BG/BG3/Sprite2D:self_modulate")
+tracks/8/interp = 1
+tracks/8/loop_wrap = true
+tracks/8/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+tracks/9/type = "value"
+tracks/9/imported = false
+tracks/9/enabled = true
+tracks/9/path = NodePath("BG/BG2/Sprite2D:self_modulate")
+tracks/9/interp = 1
+tracks/9/loop_wrap = true
+tracks/9/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+tracks/10/type = "value"
+tracks/10/imported = false
+tracks/10/enabled = true
+tracks/10/path = NodePath("BG/BG1/Sprite2D:self_modulate")
+tracks/10/interp = 1
+tracks/10/loop_wrap = true
+tracks/10/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+tracks/11/type = "value"
+tracks/11/imported = false
+tracks/11/enabled = true
+tracks/11/path = NodePath("AnimationPlayer/Try:self_modulate")
+tracks/11/interp = 1
+tracks/11/loop_wrap = true
+tracks/11/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 0)]
+}
+tracks/12/type = "value"
+tracks/12/imported = false
+tracks/12/enabled = true
+tracks/12/path = NodePath("AnimationPlayer/Exit:self_modulate")
+tracks/12/interp = 1
+tracks/12/loop_wrap = true
+tracks/12/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 0)]
+}
+tracks/13/type = "value"
+tracks/13/imported = false
+tracks/13/enabled = true
+tracks/13/path = NodePath("BG/ColorRect:mouse_filter")
+tracks/13/interp = 1
+tracks/13/loop_wrap = true
+tracks/13/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [0]
+}
+
+[sub_resource type="Animation" id="Animation_lt5d2"]
+resource_name = "lose"
+length = 5.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("AnimationPlayer/ColorRect:self_modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1.3),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(0, 0, 0, 0), Color(0, 0, 0, 1)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("CanvasLayer/Control/Timer:self_modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 1.3),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("CanvasLayer/Control/Guess:self_modulate")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 1.3),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("CanvasLayer/Control/Blank:self_modulate")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0, 1.3),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("CanvasLayer/Control/LineEdit:self_modulate")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0, 1.3),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("AnimationPlayer/Label:self_modulate")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(2.03, 3.9),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+tracks/6/type = "value"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath("AnimationPlayer/Label:text")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/keys = {
+"times": PackedFloat32Array(2.05),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": ["You Lose"]
+}
+tracks/7/type = "value"
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/path = NodePath("BG/BG4/Sprite2D:self_modulate")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/keys = {
+"times": PackedFloat32Array(0, 3.0333333),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+tracks/8/type = "value"
+tracks/8/imported = false
+tracks/8/enabled = true
+tracks/8/path = NodePath("BG/BG3/Sprite2D:self_modulate")
+tracks/8/interp = 1
+tracks/8/loop_wrap = true
+tracks/8/keys = {
+"times": PackedFloat32Array(0, 1.3),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+tracks/9/type = "value"
+tracks/9/imported = false
+tracks/9/enabled = true
+tracks/9/path = NodePath("BG/BG2/Sprite2D:self_modulate")
+tracks/9/interp = 1
+tracks/9/loop_wrap = true
+tracks/9/keys = {
+"times": PackedFloat32Array(0, 1.3),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+tracks/10/type = "value"
+tracks/10/imported = false
+tracks/10/enabled = true
+tracks/10/path = NodePath("BG/BG1/Sprite2D:self_modulate")
+tracks/10/interp = 1
+tracks/10/loop_wrap = true
+tracks/10/keys = {
+"times": PackedFloat32Array(0, 1.3),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+tracks/11/type = "value"
+tracks/11/imported = false
+tracks/11/enabled = true
+tracks/11/path = NodePath("AnimationPlayer/Try:self_modulate")
+tracks/11/interp = 1
+tracks/11/loop_wrap = true
+tracks/11/keys = {
+"times": PackedFloat32Array(3.04, 4.42),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+tracks/12/type = "value"
+tracks/12/imported = false
+tracks/12/enabled = true
+tracks/12/path = NodePath("AnimationPlayer/Exit:self_modulate")
+tracks/12/interp = 1
+tracks/12/loop_wrap = true
+tracks/12/keys = {
+"times": PackedFloat32Array(3.03, 4.43),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+tracks/13/type = "value"
+tracks/13/imported = false
+tracks/13/enabled = true
+tracks/13/path = NodePath("BG/ColorRect:mouse_filter")
+tracks/13/interp = 1
+tracks/13/loop_wrap = true
+tracks/13/keys = {
+"times": PackedFloat32Array(0, 2.96),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [0, 2]
+}
+
+[sub_resource type="Animation" id="Animation_486yd"]
+resource_name = "win"
+length = 5.133333
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("AnimationPlayer/ColorRect:self_modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1.2),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(0, 0, 0, 0), Color(0, 0, 0, 1)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("CanvasLayer/Control/Timer:self_modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 1.2),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("CanvasLayer/Control/Guess:self_modulate")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 1.2),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("CanvasLayer/Control/Blank:self_modulate")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0.06666672, 1.2),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("CanvasLayer/Control/LineEdit:self_modulate")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0, 1.2),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("AnimationPlayer/Label:self_modulate")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(1.84, 3.6),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+tracks/6/type = "value"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath("AnimationPlayer/Label:text")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/keys = {
+"times": PackedFloat32Array(1.71),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": ["You Win"]
+}
+tracks/7/type = "value"
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/path = NodePath("AnimationPlayer/Try:self_modulate")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/keys = {
+"times": PackedFloat32Array(3.26, 4.64),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+tracks/8/type = "value"
+tracks/8/imported = false
+tracks/8/enabled = true
+tracks/8/path = NodePath("AnimationPlayer/Exit:self_modulate")
+tracks/8/interp = 1
+tracks/8/loop_wrap = true
+tracks/8/keys = {
+"times": PackedFloat32Array(3.2666667, 4.66),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+tracks/9/type = "value"
+tracks/9/imported = false
+tracks/9/enabled = true
+tracks/9/path = NodePath("BG/ColorRect:mouse_filter")
+tracks/9/interp = 1
+tracks/9/loop_wrap = true
+tracks/9/keys = {
+"times": PackedFloat32Array(0, 3.17),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [0, 2]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_486yd"]
+_data = {
+&"RESET": SubResource("Animation_134en"),
+&"lose": SubResource("Animation_lt5d2"),
+&"win": SubResource("Animation_486yd")
+}
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_l3v4f"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_tc8kw"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_m0vha"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_y25yv"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ybd71"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_2wrl0"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_rxn5f"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_0sta5"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_sow48"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_nngya"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_5ajbr"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_enqqj"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_1p7j8"]
+
+[node name="MainGame" type="Node2D" unique_id=1822477335]
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=1576723221]
+position = Vector2(575, 326)
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=1923683878]
+libraries/ = SubResource("AnimationLibrary_486yd")
+
+[node name="ColorRect" type="ColorRect" parent="AnimationPlayer" unique_id=674523782]
+self_modulate = Color(0, 0, 0, 0)
+offset_right = 40.0
+offset_bottom = 40.0
+scale = Vector2(28.770761, 16.236437)
+mouse_filter = 2
+
+[node name="Label" type="Label" parent="AnimationPlayer" unique_id=1739426727]
+self_modulate = Color(1, 1, 1, 0)
+z_index = 1
+offset_left = 464.0
+offset_top = 152.0
+offset_right = 689.0
+offset_bottom = 224.0
+theme_override_fonts/font = ExtResource("2_lt5d2")
+theme_override_font_sizes/font_size = 52
+text = "You Lose"
+
+[node name="Try" type="Button" parent="AnimationPlayer" unique_id=191493025]
+self_modulate = Color(1, 1, 1, 0)
+offset_left = 506.0
+offset_top = 414.0
+offset_right = 650.0
+offset_bottom = 462.0
+theme_override_fonts/font = ExtResource("2_lt5d2")
+theme_override_font_sizes/font_size = 29
+theme_override_styles/normal = SubResource("StyleBoxEmpty_l3v4f")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_tc8kw")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_m0vha")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_y25yv")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_ybd71")
+text = "Try Again"
+
+[node name="Exit" type="Button" parent="AnimationPlayer" unique_id=1582489818]
+self_modulate = Color(1, 1, 1, 0)
+offset_left = 544.0
+offset_top = 500.0
+offset_right = 608.0
+offset_bottom = 548.0
+theme_override_fonts/font = ExtResource("2_lt5d2")
+theme_override_font_sizes/font_size = 29
+theme_override_styles/normal = SubResource("StyleBoxEmpty_2wrl0")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_rxn5f")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_0sta5")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_sow48")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_nngya")
+text = "Exit"
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=2043955290]
+
+[node name="Control" type="Control" parent="CanvasLayer" unique_id=1463517832]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+mouse_filter = 2
+script = ExtResource("1_134en")
+
+[node name="Narrator" type="AudioStreamPlayer2D" parent="CanvasLayer/Control" unique_id=1288060756]
+
+[node name="Timer" type="Label" parent="CanvasLayer/Control" unique_id=1120909744]
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -824.0
+offset_top = 72.0
+offset_right = -778.0
+offset_bottom = 127.0
+grow_horizontal = 0
+theme_override_fonts/font = ExtResource("2_lt5d2")
+theme_override_font_sizes/font_size = 40
+text = "30"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Guess" type="Label" parent="CanvasLayer/Control" unique_id=399136487]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -173.0
+offset_top = -174.0
+offset_right = 173.0
+offset_bottom = -102.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 0
+theme_override_fonts/font = ExtResource("2_lt5d2")
+theme_override_font_sizes/font_size = 52
+text = "Your Words is"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Blank" type="Label" parent="CanvasLayer/Control" unique_id=1271545805]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -17.5
+offset_top = -354.0
+offset_right = 21.5
+offset_bottom = -283.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_fonts/font = ExtResource("2_lt5d2")
+theme_override_font_sizes/font_size = 70
+text = "..."
+horizontal_alignment = 1
+
+[node name="LineEdit" type="LineEdit" parent="CanvasLayer/Control" unique_id=1609545233]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -34.25
+offset_top = -166.0
+offset_right = 34.25
+offset_bottom = -135.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_constants/caret_width = 2
+theme_override_fonts/font = ExtResource("2_lt5d2")
+theme_override_font_sizes/font_size = 70
+theme_override_styles/normal = SubResource("StyleBoxEmpty_5ajbr")
+theme_override_styles/read_only = SubResource("StyleBoxEmpty_enqqj")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_1p7j8")
+alignment = 1
+expand_to_text_length = true
+caret_blink = true
+
+[node name="SFX" type="AudioStreamPlayer2D" parent="CanvasLayer/Control" unique_id=1990315628]
+
+[node name="BG" type="Node2D" parent="." unique_id=336227609]
+
+[node name="ColorRect" type="ColorRect" parent="BG" unique_id=1399022342]
+self_modulate = Color(0, 0, 0, 1)
+offset_right = 40.0
+offset_bottom = 40.0
+scale = Vector2(28.803679, 16.199707)
+
+[node name="BG1" type="Parallax2D" parent="BG" unique_id=2068162246]
+scale = Vector2(5.2328486, 5.6603575)
+scroll_offset = Vector2(-828, 410)
+repeat_size = Vector2(256, 0)
+autoscroll = Vector2(2, -1.7)
+
+[node name="Sprite2D" type="Sprite2D" parent="BG/BG1" unique_id=308875762]
+position = Vector2(287.03293, -4.9466844)
+texture = ExtResource("3_l3v4f")
+
+[node name="BG2" type="Parallax2D" parent="BG" unique_id=773432548]
+scale = Vector2(5.2328486, 5.6603575)
+scroll_offset = Vector2(-626.6094, 325)
+repeat_size = Vector2(256, 0)
+autoscroll = Vector2(-1.4, 1.8)
+
+[node name="Sprite2D" type="Sprite2D" parent="BG/BG2" unique_id=440538681]
+position = Vector2(248.54709, 5.8300204)
+texture = ExtResource("4_tc8kw")
+
+[node name="BG3" type="Parallax2D" parent="BG" unique_id=287573983]
+scale = Vector2(5.2328486, 5.6603575)
+scroll_offset = Vector2(-265.0001, 308)
+repeat_size = Vector2(256, 0)
+autoscroll = Vector2(-0.7, 0.4)
+
+[node name="Sprite2D" type="Sprite2D" parent="BG/BG3" unique_id=560422045]
+position = Vector2(180.0167, 8.48003)
+texture = ExtResource("5_m0vha")
+
+[node name="BG4" type="Parallax2D" parent="BG" unique_id=1258618850]
+scale = Vector2(5.2328486, 5.6603575)
+scroll_offset = Vector2(-831, 407)
+repeat_size = Vector2(256, 0)
+autoscroll = Vector2(0.5, -0.3)
+
+[node name="Sprite2D" type="Sprite2D" parent="BG/BG4" unique_id=1263973499]
+position = Vector2(286.84183, -4.4166822)
+texture = ExtResource("6_y25yv")
+
+[connection signal="mouse_entered" from="AnimationPlayer/Try" to="CanvasLayer/Control" method="_on_try_mouse_entered"]
+[connection signal="pressed" from="AnimationPlayer/Try" to="CanvasLayer/Control" method="_on_try_pressed"]
+[connection signal="mouse_entered" from="AnimationPlayer/Exit" to="CanvasLayer/Control" method="_on_exit_mouse_entered"]
+[connection signal="pressed" from="AnimationPlayer/Exit" to="CanvasLayer/Control" method="_on_exit_pressed"]
+[connection signal="text_submitted" from="CanvasLayer/Control/LineEdit" to="CanvasLayer/Control" method="_on_line_edit_text_submitted"]

@@ -1,0 +1,337 @@
+[gd_scene format=3 uid="uid://cqoteh2lbbyq0"]
+
+[ext_resource type="Script" uid="uid://bj8spgip7qnip" path="res://scripts/title_screen.gd" id="1_e54dn"]
+[ext_resource type="Texture2D" uid="uid://c8sw7nlou06i4" path="res://assets/bg/background_1.png" id="1_mgrm8"]
+[ext_resource type="Texture2D" uid="uid://bh3m3jioxu5ug" path="res://assets/bg/background_2.png" id="2_dc4i4"]
+[ext_resource type="Texture2D" uid="uid://1nxk1pye52ha" path="res://assets/bg/background_3.png" id="3_e54dn"]
+[ext_resource type="Texture2D" uid="uid://ba3q3bkuddfy5" path="res://assets/bg/background_4.png" id="4_3yumr"]
+[ext_resource type="FontFile" uid="uid://bia2cieq2beeu" path="res://assets/font/Minecraft.ttf" id="6_3yumr"]
+[ext_resource type="AudioStream" uid="uid://3yn30ejchqbe" path="res://assets/sfx/narrator/first.mp3" id="7_3yumr"]
+[ext_resource type="AudioStream" uid="uid://s0kxa34r725i" path="res://assets/sfx/narrator/second.mp3" id="8_u26n3"]
+[ext_resource type="AudioStream" uid="uid://dirseyu275yu4" path="res://assets/sfx/narrator/third.mp3" id="9_ib7db"]
+[ext_resource type="AudioStream" uid="uid://cc4qmtvqpw7ji" path="res://assets/sfx/narrator/fourth.mp3" id="10_frs5l"]
+[ext_resource type="AudioStream" uid="uid://cpb5at73b0bot" path="res://assets/sfx/narrator/fifth.mp3" id="11_mynnq"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_cs5ya"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_mykxm"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_e8tpv"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_4qe4i"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_p07av"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_tklts"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_u26n3"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ib7db"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_frs5l"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_mynnq"]
+
+[sub_resource type="Animation" id="Animation_e54dn"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("BG/Title:self_modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("BG/Start:self_modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("BG/Quit:self_modulate")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("BG/Subtitle:text")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": ["Hello Lucky!"]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("BG/Subtitle:visible")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+
+[sub_resource type="Animation" id="Animation_3yumr"]
+resource_name = "start"
+length = 20.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("BG/Title:self_modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 3),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("BG/Start:self_modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 3),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("BG/Quit:self_modulate")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 3),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+tracks/3/type = "audio"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("BG/SFX")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"clips": [{
+"end_offset": 0.0,
+"start_offset": 0.0,
+"stream": ExtResource("7_3yumr")
+}, {
+"end_offset": 0.0,
+"start_offset": 0.0,
+"stream": ExtResource("8_u26n3")
+}, {
+"end_offset": 0.0,
+"start_offset": 0.0,
+"stream": ExtResource("9_ib7db")
+}, {
+"end_offset": 0.0,
+"start_offset": 0.0,
+"stream": ExtResource("10_frs5l")
+}, {
+"end_offset": 0.0,
+"start_offset": 0.0,
+"stream": ExtResource("11_mynnq")
+}],
+"times": PackedFloat32Array(4, 5.633333, 7.5333333, 9.6, 12.4)
+}
+tracks/3/use_blend = true
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("BG/Subtitle:text")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(4.266667, 4.8333335, 5.820515, 7.7261586, 9.874979, 11.084979, 12.6049795),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": ["Hello Lucky", "Hello Lucky, its me!", "Ur kinds cooked right now so", "We will be studying here in ur dream", "Fail this questions", "or never wake up again", "goodluck lucky"]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("BG/Subtitle:visible")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0, 4.01),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [false, true]
+}
+tracks/6/type = "method"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath(".")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/keys = {
+"times": PackedFloat32Array(14.233334),
+"transitions": PackedFloat32Array(1),
+"values": [{
+"args": [],
+"method": &"change_scene"
+}]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_cs5ya"]
+_data = {
+&"RESET": SubResource("Animation_e54dn"),
+&"start": SubResource("Animation_3yumr")
+}
+
+[node name="TiteScreen" type="Node2D" unique_id=1144325780]
+script = ExtResource("1_e54dn")
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=383043917]
+position = Vector2(576, 324)
+
+[node name="BG" type="Node" parent="." unique_id=1294556062]
+
+[node name="ColorRect" type="ColorRect" parent="BG" unique_id=821499952]
+self_modulate = Color(0, 0, 0, 1)
+offset_right = 40.0
+offset_bottom = 40.0
+scale = Vector2(28.803679, 16.199707)
+
+[node name="BG1" type="Parallax2D" parent="BG" unique_id=993471563]
+scale = Vector2(5.2328486, 5.6603575)
+scroll_offset = Vector2(-828, 410)
+repeat_size = Vector2(256, 0)
+autoscroll = Vector2(2, -1.7)
+
+[node name="Sprite2D" type="Sprite2D" parent="BG/BG1" unique_id=959648874]
+position = Vector2(287.03293, -4.9466844)
+texture = ExtResource("1_mgrm8")
+
+[node name="BG2" type="Parallax2D" parent="BG" unique_id=164051549]
+scale = Vector2(5.2328486, 5.6603575)
+scroll_offset = Vector2(-626.6094, 325)
+repeat_size = Vector2(256, 0)
+autoscroll = Vector2(-1.4, 1.8)
+
+[node name="Sprite2D" type="Sprite2D" parent="BG/BG2" unique_id=961235195]
+position = Vector2(248.54709, 5.8300204)
+texture = ExtResource("2_dc4i4")
+
+[node name="BG3" type="Parallax2D" parent="BG" unique_id=1036321833]
+scale = Vector2(5.2328486, 5.6603575)
+scroll_offset = Vector2(-265.0001, 308)
+repeat_size = Vector2(256, 0)
+autoscroll = Vector2(-0.7, 0.4)
+
+[node name="Sprite2D" type="Sprite2D" parent="BG/BG3" unique_id=1636228104]
+position = Vector2(180.0167, 8.48003)
+texture = ExtResource("3_e54dn")
+
+[node name="BG4" type="Parallax2D" parent="BG" unique_id=1752813829]
+scale = Vector2(5.2328486, 5.6603575)
+scroll_offset = Vector2(-831, 407)
+repeat_size = Vector2(256, 0)
+autoscroll = Vector2(0.5, -0.3)
+
+[node name="Sprite2D" type="Sprite2D" parent="BG/BG4" unique_id=1493906500]
+position = Vector2(286.84183, -4.4166822)
+texture = ExtResource("4_3yumr")
+
+[node name="Title" type="Label" parent="BG" unique_id=1490271963]
+offset_left = 56.999996
+offset_top = 64.0
+offset_right = 593.0
+offset_bottom = 137.0
+scale = Vector2(0.9940389, 0.9854278)
+theme_override_fonts/font = ExtResource("6_3yumr")
+theme_override_font_sizes/font_size = 50
+text = "To Bee or Not To Bee"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Start" type="Button" parent="BG" unique_id=1254705705]
+offset_left = 941.0
+offset_top = 404.0
+offset_right = 1036.0
+offset_bottom = 463.0
+mouse_default_cursor_shape = 2
+theme_override_fonts/font = ExtResource("6_3yumr")
+theme_override_font_sizes/font_size = 37
+theme_override_styles/normal = SubResource("StyleBoxEmpty_cs5ya")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_mykxm")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_e8tpv")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_4qe4i")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_p07av")
+text = "Start"
+
+[node name="Quit" type="Button" parent="BG" unique_id=1001154473]
+offset_left = 973.0
+offset_top = 495.0
+offset_right = 1038.0
+offset_bottom = 540.0
+mouse_default_cursor_shape = 2
+theme_override_fonts/font = ExtResource("6_3yumr")
+theme_override_font_sizes/font_size = 27
+theme_override_styles/normal = SubResource("StyleBoxEmpty_tklts")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_u26n3")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_ib7db")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_frs5l")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_mynnq")
+text = "Quit"
+
+[node name="SFX" type="AudioStreamPlayer2D" parent="BG" unique_id=1052383564]
+self_modulate = Color(1, 1, 1, 0)
+
+[node name="Subtitle" type="Label" parent="BG" unique_id=527603169]
+visible = false
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -20.0
+offset_top = -104.0
+offset_right = 20.0
+offset_bottom = -81.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_fonts/font = ExtResource("6_3yumr")
+text = "Hello Lucky!"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=981873994]
+libraries/ = SubResource("AnimationLibrary_cs5ya")
+
+[connection signal="mouse_entered" from="BG/Start" to="." method="_on_start_mouse_entered"]
+[connection signal="pressed" from="BG/Start" to="." method="_on_start_pressed"]
+[connection signal="mouse_entered" from="BG/Quit" to="." method="_on_quit_mouse_entered"]
+[connection signal="pressed" from="BG/Quit" to="." method="_on_quit_pressed"]
+[connection signal="animation_finished" from="AnimationPlayer" to="." method="_on_animation_player_animation_finished"]
