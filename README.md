@@ -1,4 +1,5 @@
 Go To The Releases for the full game
+you only need the executable file to run the game
 
 - To view the source code Extract then open the folder in godot
 code are located at scripts.
